@@ -37,7 +37,7 @@ cols.append('Проверить частоту')
 
 col1, col2, col3 = st.columns(3)
 
-graphic = col1.selectbox(label='Выбери тип графика', options=graphics, index=0)
+graphic = col1.selectbox(label='Выбери тип графика', options=graphics, index=4)
 x = col2.selectbox(label='Что будем показывать по оси Х?', options=cols[:-1], index=0)
 y = col3.selectbox(label='Что будем показывать по оси У?', options=cols, index=1)
 
