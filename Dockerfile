@@ -17,4 +17,4 @@ EXPOSE 8501
 HEALTHCHECK --interval=10s --timeout=5s --retries=6 --start-period=15s \
   CMD bash -lc 'curl -fsS http://localhost:8501/_stcore/health >/dev/null || exit 1'
 
-ENTRYPOINT ["streamlit", "run", "streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+ENTRYPOINT ["streamlit", "run", "ticker.py", "--server.port=8501", "--server.address=0.0.0.0"]
